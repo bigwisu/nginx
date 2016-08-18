@@ -1,15 +1,16 @@
-FROM ubuntu:trusty
-MAINTAINER Feng Honglin <hfeng@tutum.co>
+FROM ubuntu:xenial
+MAINTAINER Wisu Suntoyo <wisu@bigwisu.com>
 
 RUN apt-get update && \
     apt-get install -y nginx && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-ADD sites-enabled/ /etc/nginx/sites-enabled/
-ADD app/ /app/
+COPY conf/nginx.conf /etc/nginx/
+RUN rm -rf /var/www/*
 
-EXPOSE 80
+VOLUME ["/var/www", "/etc/nginx/sites-enabled"]
+
+EXPOSE 80 443
 
 CMD ["/usr/sbin/nginx"]

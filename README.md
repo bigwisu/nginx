@@ -1,11 +1,7 @@
-tutum-docker-nginx
+bigwisu-docker-nginx
 ==================
 
-**This image will be deprecated soon. Please use the docker official image:** https://hub.docker.com/_/nginx/
-
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
-
-Base Docker Image to run Nginx server
+Many images are deprecating and moving to official images which are based on Alpine Linux. So I'm forking and maintaining this Ubuntu based Nginx Docker Image.
 
 
 Usage
