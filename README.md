@@ -1,7 +1,7 @@
 bigwisu-docker-nginx
 ==================
 
-Many images are deprecating and moving to official images which are based on Alpine Linux. So let's fork and maintain this Ubuntu based Nginx Docker Image.
+Many images are deprecating and moving to official images which are based on Alpine Linux. Size wise this image is around 73MB compared to the 19MB official, not that much difference... So this Ubuntu based Nginx Docker Image might be handy.
 
 Usage
 -----
