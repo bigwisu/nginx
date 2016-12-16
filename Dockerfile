@@ -9,7 +9,7 @@ RUN apt-get update && \
 COPY conf/nginx.conf /etc/nginx/
 RUN rm -rf /var/www/*
 
-VOLUME ["/var/www", "/etc/nginx/sites-enabled"]
+VOLUME ["/var/www", "/etc/nginx/sites-enabled", "/etc/nginx/ssl"]
 
 EXPOSE 80 443
 
