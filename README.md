@@ -1,3 +1,3 @@
 # PHP with Nginx Image
 
-Includes gRPC module
+Based on the well structured webdevops/php-nginx, adding gRPC module to ease installation of Google Cloud Libraries
