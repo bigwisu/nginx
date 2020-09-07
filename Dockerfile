@@ -1,4 +1,4 @@
-FROM webdevops/php-nginx:7.4
+FROM webdevops/php-nginx:7.3
 
 RUN apt-get update && apt-get install -y libz-dev
 RUN pecl install grpc
